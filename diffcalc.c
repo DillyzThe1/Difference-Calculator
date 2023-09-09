@@ -173,20 +173,18 @@ void main() {
 	printf("First Path: \n");
     scanf("%255s", &dir1);
 	if (!verifyPath(dir1)) {
-		printf("%s is not an exist\n", dir1);
+		printf("%s does not exist.\n", dir1);
 		scanf("%c",&ch);
 		return;
 	}
-    printf("hello world what are %s\n\n", dir1);
         
     printf("Second Path: \n");
     scanf("%255s", &dir2);
 	if (!verifyPath(dir2)) {
-		printf("%s is not an exist\n", dir2);
+		printf("%s does not exist.\n", dir2);
 		scanf("%c",&ch);
 		return;
 	}
-    printf("hello wwww what are %s\n\n", dir2);
 	
 	FILE *wo;
 	wo = fopen("diff.txt", "w");
