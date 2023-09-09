@@ -168,7 +168,7 @@ void checkFolder(FILE *log, char *folderPath, char *compPath, bool noHash, char 
 char ch;
 char dir1[256], dir2[256];
 void main() {
-	printf("hello world what are you doing here\n");
+	printf("Difference calculator READY!\n");
 	
 	printf("First Path: \n");
     scanf("%255s", &dir1);
@@ -190,7 +190,7 @@ void main() {
 	
 	FILE *wo;
 	wo = fopen("diff.txt", "w");
-	fputs("hello boy\nwhat are you\n\ndoing here\n\n", wo);
+	fputs("Difference Calculator Report\nhttps://github.com/DillyzThe1/Difference-Calculator/\n\n", wo);
 	
 	// the big part
 	checkFolder(wo, dir1, dir2, false, "ADDED");
